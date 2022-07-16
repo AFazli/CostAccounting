@@ -1,0 +1,26 @@
+﻿@page "/FormulationDetail/{FormulationId:guid}"
+@inherits FormulationDetailBase
+
+@if (Formulation == null && ErrorMessage == null)
+{
+    <DisplaySpinner />
+}
+else if (ErrorMessage != null)
+{
+    <DisplayError ErrorMessage="@ErrorMessage"></DisplayError>
+}
+else
+{
+    <h3 class="mb-5">جزئیات فرمولاسیون</h3>
+
+    <div class="form-group">
+        <a class="btn btn-info" href="/">بازگشت</a>
+    </div>
+
+    @if (FormulationDetails.Count() > 0)
+    {
+        <div class="row mt-3">
+            <DisplayFormulationDetails FormulationDetails="@FormulationDetails.ToList()"></DisplayFormulationDetails>
+        </div>
+    }
+}

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddFormulationDetailDuplicatedGoodsCodeInOneFormulaException" xml:space="preserve">
+    <value>کد کالا در یک فرمول نباید تکراری باشد</value>
+  </data>
+  <data name="AddFormulationDuplicatedProductCodeAndStartDateException" xml:space="preserve">
+    <value>کد محصول و تاریخ شروع تکراری می باشد</value>
+  </data>
+  <data name="ConfirmingAlreadyConfirmedException" xml:space="preserve">
+    <value>قبلا تائید شده است</value>
+  </data>
+  <data name="ConfirmingNotRegulatorSignedException" xml:space="preserve">
+    <value>فرمولاسیون بدون امضاء، قابل تائید نیست</value>
+  </data>
+  <data name="DeleteFormulationDetailSignedException" xml:space="preserve">
+    <value>حذف جزئیات فرمولاسیون امضاء شده، امکان پذیر نیست</value>
+  </data>
+  <data name="DeleteFormulationSignedException" xml:space="preserve">
+    <value>حذف فرمولاسیون امضاء شده، امکان پذیر نیست</value>
+  </data>
+  <data name="DeleteFormulationWithItemsException" xml:space="preserve">
+    <value>حذف فرمولاسیون دارای جزئیات، امکان پذیر نیست</value>
+  </data>
+  <data name="DroppedAmountLessThanZeroException" xml:space="preserve">
+    <value>مقدار دور ریز محاسبه شده نباید کمتر از صفر باشد</value>
+  </data>
+  <data name="DroppedPercentLessThanZeroException" xml:space="preserve">
+    <value>درصد دور ریز محاسبه شده نباید کمتر از صفر باشد</value>
+  </data>
+  <data name="DroppedPercentMoreThan100Exception" xml:space="preserve">
+    <value>درصد دور ریز محاسبه شده نباید بیشتر از 100 باشد</value>
+  </data>
+  <data name="GoodsCodeCanNotBeNullException" xml:space="preserve">
+    <value>کد کالا نباید خالی باشد</value>
+  </data>
+  <data name="HumidityPercentLessThanZeroException" xml:space="preserve">
+    <value>درصد رطوبت نباید کمتر از صفر باشد</value>
+  </data>
+  <data name="HumidityPercentMoreThan100Exception" xml:space="preserve">
+    <value>درصد رطوبت نباید بیشتر از 100 باشد</value>
+  </data>
+  <data name="InvalidFormulationConfirmException" xml:space="preserve">
+    <value>مقدار تائید کننده فرمولاسیون، نامعتبر می باشد</value>
+  </data>
+  <data name="InvalidFormulationDetailRegistrarException" xml:space="preserve">
+    <value>مقدار ثبات جزئیات فرمولاسیون، نامعتبر می باشد</value>
+  </data>
+  <data name="InvalidFormulationRegulatorException" xml:space="preserve">
+    <value>مقدار امضاء کننده فرمولاسیون، نامعتبر می باشد</value>
+  </data>
+  <data name="MammockLessThanOrEqualUsedAmountException" xml:space="preserve">
+    <value>دور ریز نباید کمتر و یا مساوی مقدار استفاده باشد </value>
+  </data>
+  <data name="MammockLessThanZeroException" xml:space="preserve">
+    <value>دور ریز نباید کمتر از صفر باشد</value>
+  </data>
+  <data name="ProductCodeCanNotBeNullException" xml:space="preserve">
+    <value>کد محصول نباید خالی باشد</value>
+  </data>
+  <data name="ProductCodeInvalidException" xml:space="preserve">
+    <value>کد محصول باید معتبر باشد</value>
+  </data>
+  <data name="RegulatorSignAlreadyRegulatedException" xml:space="preserve">
+    <value>قبلا امضاء شده است</value>
+  </data>
+  <data name="RegulatorSignTheSumOfTheMammockShouldNotBeLessThanTheHumidityPercentException" xml:space="preserve">
+    <value>در زمان امضاء، جمع مقادیر دور ریز نباید کمتر از درصد رطوبت باشد</value>
+  </data>
+  <data name="RegulatorSignTheSumOfTheUsedAmountShouldNotBeGreaterThanTheScaleException" xml:space="preserve">
+    <value>در زمان امضاء، جمع مقادیر استفاده شده نباید بیشتر از مقیاس باشد</value>
+  </data>
+  <data name="RegulatorSignWithEmptyItemsException" xml:space="preserve">
+    <value>در زمان امضاء، جزئیات فرمولاسیون نباید خالی باشد</value>
+  </data>
+  <data name="ScaleLessThanOrEqualZeroException" xml:space="preserve">
+    <value>مقیاس نباید کمتر و یا مساوی صفر باشد</value>
+  </data>
+  <data name="StartDateCanNotBeNullException" xml:space="preserve">
+    <value>تاریخ شروع نباید خالی باشد</value>
+  </data>
+  <data name="StartDateInvalidException" xml:space="preserve">
+    <value>تاریخ شروع صحیح نیست</value>
+  </data>
+  <data name="UnConfirmWithNoConfirmationSignException" xml:space="preserve">
+    <value>لغو تائید فرمولاسیون تائید نشده امکان پذیر نیست</value>
+  </data>
+  <data name="UnRegulatorConfirmatorSignException" xml:space="preserve">
+    <value>لغو امضای فرمولاسیون تائید شده امکان پذیر نیست</value>
+  </data>
+  <data name="UnRegulatorWithNoRegulationSignException" xml:space="preserve">
+    <value>لغو امضای، فرمولاسیون امضاء نشده امکان پذیر نیست</value>
+  </data>
+  <data name="UsedAmountLessThanOrEqualZeroException" xml:space="preserve">
+    <value>مقدار استفاده شده نباید کمتر و یا مساوی صفر باشد</value>
+  </data>
+  <data name="UsedPercentLessThanZeroException" xml:space="preserve">
+    <value>درصد استفاده شده نباید کمتر از صفر باشد</value>
+  </data>
+  <data name="UsedPercentMoreThan100Exception" xml:space="preserve">
+    <value>درصد استفاده شده نباید بیشتر از 100 باشد</value>
+  </data>
+</root>

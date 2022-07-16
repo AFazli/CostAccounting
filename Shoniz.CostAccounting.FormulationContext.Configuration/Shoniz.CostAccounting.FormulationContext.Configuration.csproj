@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.ACL\Shoniz.CostAccounting.FormulationContext.ACL.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.Application\Shoniz.CostAccounting.FormulationContext.Application.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.Domain.Services\Shoniz.CostAccounting.FormulationContext.Domain.Services.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.Domain\Shoniz.CostAccounting.FormulationContext.Domain.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.Facade\Shoniz.CostAccounting.FormulationContext.Facade.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.Pesistence\Shoniz.CostAccounting.FormulationContext.Pesistence.csproj" />
+    <ProjectReference Include="..\Shoniz.Framework.DependencyInjection\Shoniz.Framework.DependencyInjection.csproj" />
+    <ProjectReference Include="..\Shoniz.Framework.Facade\Shoniz.Framework.Facade.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,53 @@
+﻿@inherits DisplayFormulationsBase
+
+@if (Formulations == null)
+{
+    <DisplaySpinner />
+}
+else
+{
+    <div class="col-md-6">
+        <h4 class="mb-2">لیست فرمولاسیون</h4>
+        @if (Formulations.Count() > 0)
+        {
+            <Table>
+                <TableHeader>
+                    <TableRow>
+                        <TableHeaderCell>#</TableHeaderCell>
+                        <TableHeaderCell>کد محصول</TableHeaderCell>
+                        <TableHeaderCell>زمان ثبت</TableHeaderCell>
+                        <TableHeaderCell>درصد رطوبت</TableHeaderCell>
+                        <TableHeaderCell>امضاء</TableHeaderCell>
+                        <TableHeaderCell>تائید</TableHeaderCell>
+                        <TableHeaderCell></TableHeaderCell>
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
+                    @foreach (var formulation in Formulations)
+                    {
+                        <TableRow>
+                            <TableRowHeader>@formulation.Id</TableRowHeader>
+                            <TableRowCell><a href="/FormulationDetail/@formulation.Id">@formulation.ProductCode</a></TableRowCell>
+                            <TableRowCell>@formulation.Timestamp</TableRowCell>
+                            <TableRowCell>@formulation.HumidityPercent</TableRowCell>
+                            <TableRowCell>@formulation.RegulatorUserId</TableRowCell>
+                            <TableRowCell>@formulation.ConfirmerUserId</TableRowCell>
+                            <TableRowCell>
+                                <Button Color="Color.Danger" Outline Size="Size.Small" Clicked="@(() => DeleteFormulation_Click(formulation.Id))">حذف</Button>
+                                <Button Color="Color.Success" Outline Size="Size.Small" Clicked="@(() => RegulatorSignFormulation_Click(formulation.Id))">امضاء</Button>
+                                <Button Color="Color.Warning" Outline Size="Size.Small" Clicked="@(() => RemoveRegulatorSignFormulation_Click(formulation.Id))">لغو امضاء</Button>
+                                <Button Color="Color.Success" Outline Size="Size.Small" Clicked="@(() => ConfirmSignFormulation_Click(formulation.Id))">تائید</Button>
+                                <Button Color="Color.Warning" Outline Size="Size.Small" Clicked="@(() => RemoveConfirmSignFormulation_Click(formulation.Id))">لغو تائید</Button>
+                            </TableRowCell>
+                        </TableRow>
+                    }
+                </TableBody>
+            </Table>
+        }
+        else
+        {
+            <p>فرمولاسیون برای نمایش وجود ندارد</p>
+        }
+    </div>
+}
+

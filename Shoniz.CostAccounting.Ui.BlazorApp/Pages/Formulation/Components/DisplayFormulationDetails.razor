@@ -1,0 +1,52 @@
+﻿@inherits DisplayFormulationDetailBase
+
+@if (FormulationDetails == null)
+{
+    <DisplaySpinner />
+}
+else
+{
+    <div class="col-md-6">
+        <h4 class="mb-2">لیست جزئیات فرمولاسیون</h4>
+        @if (FormulationDetails.Count() > 0)
+        {
+            <Table>
+                <TableHeader>
+                    <TableRow>
+                        <TableHeaderCell>#</TableHeaderCell>
+                        <TableHeaderCell>کد کالا</TableHeaderCell>
+                        <TableHeaderCell>زمان ثبت</TableHeaderCell>
+                        <TableHeaderCell>مقدار استفاده شده</TableHeaderCell>
+                        <TableHeaderCell>دور ریز</TableHeaderCell>
+                        <TableHeaderCell>ثبات</TableHeaderCell>
+                        <TableHeaderCell></TableHeaderCell>
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
+                    @foreach (var formulationDetail in FormulationDetails)
+                    {
+                        <TableRow>
+                            <TableRowHeader>@formulationDetail.Id</TableRowHeader>
+                            <TableRowCell>@formulationDetail.GoodsCode</TableRowCell>
+                            <TableRowCell>@formulationDetail.RegistrarDateTime</TableRowCell>
+                            <TableRowCell>@formulationDetail.UsedAmount</TableRowCell>
+                            <TableRowCell>@formulationDetail.Mammock</TableRowCell>
+                            <TableRowCell>@formulationDetail.RegistrarUserId</TableRowCell>
+                            <TableRowCell>
+                                <Button Color="Color.Danger" Outline Size="Size.Small" Clicked="@(() => DeleteFormulationDetail_Click(formulationDetail.Id))">حذف</Button>
+                            </TableRowCell>
+                        </TableRow>
+                    }
+                    <TableRow>
+                        <TableRowCell>جمع مقدار استفاده</TableRowCell>
+                        <TableRowCell>@SumUsedAmount</TableRowCell>
+                    </TableRow>
+                </TableBody>
+            </Table>
+        }
+        else
+        {
+            <p>جزئیات فرمولاسیون برای نمایش وجود ندارد</p>
+        }
+    </div>
+}

@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext 'Data Source=192.168.0.41;Initial Catalog=CostAccounting_Test;Persist Security Info=True;User ID=sa;Password=#529a925#;MultipleActiveResultSets=True' Microsoft.EntityFrameworkCore.SqlServer -Context 'FormulationDbContext' -Schemas 'FormulationContext' -OutputDir Models/FormulationContext -Force

@@ -1,0 +1,34 @@
+﻿@page "/"
+@using Shoniz.CostAccounting.FormulationContext.Application.Contracts.FormulationAggregate
+
+@inherits FormulationsBase
+
+@if (Formulations == null)
+{
+    <DisplaySpinner />
+}
+else
+{
+    <h3 class="mb-5">فرمولاسیون</h3>
+
+    <div class="form-group">
+        <a class="btn btn-info" href="request/create">ثبت فرمولاسیون جدید</a>
+        <Button Color="Color.Secondary" Clicked="Reload" Outline>بارگزاری مجدد</Button>
+        <Button Color="Color.Success" Clicked="() => (CreateFormulation_Click(new CreateFormulationCommand
+            {
+                ProductCode = Guid.Empty,
+                HumidityPercent = 1,
+                Scale = 1,
+                StartDate= HardCoded.StartDate
+            }))" Outline>
+            افزودن فرمولاسیون
+        </Button>
+    </div>
+
+    @if (Formulations.Count() > 0)
+    {
+        <div class="row mt-3">
+            <DisplayFormulations Formulations="@Formulations.ToList()"></DisplayFormulations>
+        </div>
+    }
+}

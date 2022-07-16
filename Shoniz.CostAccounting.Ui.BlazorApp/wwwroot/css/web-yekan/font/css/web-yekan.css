@@ -1,0 +1,31 @@
+/*WebYekanFont*/
+@font-face {
+    font-family: "YJ";
+    src: url("../fonts/Yekan.eot?#") format("eot"),
+    /* IE6–8 */ url("../fonts/Yekan.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("../fonts/Yekan.ttf") format("truetype"); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+/*WebYekanNumberFont*/
+@font-face {
+    font-family: "NYJ";
+    src: url("../fonts/yekannumbers-regular.eot?#") format("eot"),
+    /* IE6–8 */ url("../fonts/yekannumbers-regular.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("../fonts/yekannumbers-regular.ttf") format("truetype"); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+div.tooltip,
+div {
+    font-family: YJ, NYJ, Tahoma;
+}

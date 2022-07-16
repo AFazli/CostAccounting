@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shoniz.CostAccounting.Database\Shoniz.CostAccounting.Database.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.FormulationContext.Configuration\Shoniz.CostAccounting.FormulationContext.Configuration.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.Read.Queries.Contracts\Shoniz.CostAccounting.Read.Queries.Contracts.csproj" />
+    <ProjectReference Include="..\Shoniz.CostAccounting.Read.Queries.Facade\Shoniz.CostAccounting.Read.Queries.Facade.csproj" />
+    <ProjectReference Include="..\Shoniz.Framework.Application\Shoniz.Framework.Application.csproj" />
+    <ProjectReference Include="..\Shoniz.Framework.Persistence\Shoniz.Framework.Persistence.csproj" />
+    <ProjectReference Include="..\Shoniz.Framework.Security\Shoniz.Framework.Security.csproj" />
+  </ItemGroup>
+
+</Project>
